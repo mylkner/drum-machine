@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Russo One";
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: radial-gradient(purple, rgb(26, 1, 26));
+}
+
+#drum-machine {
+    width: 700px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(45deg, black, grey);
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    place-items: center;
+    width: 200px;
+}
+
+.drum-pad {
+    font-size: 20px;
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(45deg, black, grey);
+    color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px black;
+    cursor: pointer;
+    transition: transform 0.05s;
+}
+
+.drum-pad:active,
+.drum-pad-active {
+    transform: scale(0.92);
+}
+
+#display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    background-color: rgb(151, 148, 148);
+    border: 1px solid black;
+    width: 220px;
+    height: 80px;
+    border-radius: 10px;
+}
